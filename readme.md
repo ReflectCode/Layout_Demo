@@ -29,20 +29,20 @@ This sample project demonstrates conversion of following layouts -
 
 ## Android Layouts transformation in progress
 Following layouts will be added soon - 
-* Nested LinearLayout
+* LinearLayout (Nested)
 * ConstraintLayout
 * TableLayout
 
 ## Statement Estimation
 | File | Statement |
 |---------|------------|
-| activity_main.xml | ??? |
-| relative_layout.xml | ??? |
-| frame_layout.xml | ??? |
-| linear_nested.xml | --- |
-| constraint_layout.xml | --- |
-| table_layout.xml | --- |
-| **Total** | **1335** |
+| activity_main.xml | 353 |
+| relative_layout.xml | 752 |
+| frame_layout.xml | 514 |
+| linear_nested.xml | - |
+| constraint_layout.xml | - |
+| table_layout.xml | - |
+| **Total** | **1619** |
 
 
 ## Dev Notes
