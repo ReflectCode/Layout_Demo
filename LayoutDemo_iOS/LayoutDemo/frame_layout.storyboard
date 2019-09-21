@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LayoutDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LayoutDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LayoutDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="FrameLayout-Screen-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--FrameLayout-Screen-VC-->
+        <scene sceneID="FrameLayout-Screen-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="FrameLayout-Screen-VC" id="FrameLayout-Screen-VC" userLabel="FrameLayout-Screen-VC" customClass="FrameLayout_Screen" customModule="LayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="FrameLayout-Screen-View" userLabel="FrameLayout-Screen-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1018" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1018" userLabel="RC-ID-1018">
+                                <rect key="frame" x="18" y="82" width="378" height="636"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1019" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1019" userLabel="RC-ID-1019">
+                                        <rect key="frame" x="328" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1019-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1019-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1020" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1020" userLabel="RC-ID-1020">
+                                        <rect key="frame" x="303" y="25" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1020-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1020-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1021" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1021" userLabel="RC-ID-1021">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1021-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1021-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1022" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1022" userLabel="RC-ID-1022">
+                                        <rect key="frame" x="25" y="25" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1022-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1022-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1023" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1023" userLabel="RC-ID-1023">
+                                        <rect key="frame" x="328" y="586" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1023-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1023-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1024" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1024" userLabel="RC-ID-1024">
+                                        <rect key="frame" x="303" y="561" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1024-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1024-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1025" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1025" userLabel="RC-ID-1025">
+                                        <rect key="frame" x="0.0" y="586" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1025-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1025-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1026" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1026" userLabel="RC-ID-1026">
+                                        <rect key="frame" x="25" y="561" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1026-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1026-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1027" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1027" userLabel="RC-ID-1027">
+                                        <rect key="frame" x="164" y="293" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1027-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1027-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1028" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1028" userLabel="RC-ID-1028">
+                                        <rect key="frame" x="164" y="0.0" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1028-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1028-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1029" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1029" userLabel="RC-ID-1029">
+                                        <rect key="frame" x="0.0" y="293" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1029-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1029-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1030" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1030" userLabel="RC-ID-1030">
+                                        <rect key="frame" x="328" y="293" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1030-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1030-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" tag="1031" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_star" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1031" userLabel="RC-ID-1031">
+                                        <rect key="frame" x="164" y="586" width="50" height="50"/>
+                                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="RC-ID-1031-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" constant="50" id="RC-ID-1031-Width-Eq-50"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1032" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" text="Frame Layout Demo" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1032" userLabel="RC-ID-1032">
+                                        <rect key="frame" x="99" y="233.33333333333331" width="180" height="21.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="RC-ID-1032-Width-Eq-180"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.74117647060000003" green="0.94117647059999998" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RC-ID-1019" firstAttribute="right" secondItem="RC-ID-1018" secondAttribute="right" id="RC-ID-1019-right-RC-ID-1018" userLabel="RC-ID-1019-right-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1019" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="RC-ID-1019-top-RC-ID-1018" userLabel="RC-ID-1019-top-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1020" firstAttribute="right" secondItem="RC-ID-1018" secondAttribute="right" constant="-25" id="RC-ID-1020-right-RC-ID-1018" userLabel="RC-ID-1020-right-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1020" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" constant="25" id="RC-ID-1020-top-RC-ID-1018" userLabel="RC-ID-1020-top-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1021" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" id="RC-ID-1021-leading-RC-ID-1018" userLabel="RC-ID-1021-leading-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1021" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="RC-ID-1021-top-RC-ID-1018" userLabel="RC-ID-1021-top-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1022" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" constant="25" id="RC-ID-1022-leading-RC-ID-1018" userLabel="RC-ID-1022-leading-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1022" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" constant="25" id="RC-ID-1022-top-RC-ID-1018" userLabel="RC-ID-1022-top-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1023" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" id="RC-ID-1023-bottom-RC-ID-1018" userLabel="RC-ID-1023-bottom-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1023" firstAttribute="right" secondItem="RC-ID-1018" secondAttribute="right" id="RC-ID-1023-right-RC-ID-1018" userLabel="RC-ID-1023-right-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1024" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" constant="-25" id="RC-ID-1024-bottom-RC-ID-1018" userLabel="RC-ID-1024-bottom-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1024" firstAttribute="right" secondItem="RC-ID-1018" secondAttribute="right" constant="-25" id="RC-ID-1024-right-RC-ID-1018" userLabel="RC-ID-1024-right-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1025" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" id="RC-ID-1025-bottom-RC-ID-1018" userLabel="RC-ID-1025-bottom-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1025" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" id="RC-ID-1025-leading-RC-ID-1018" userLabel="RC-ID-1025-leading-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1026" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" constant="-25" id="RC-ID-1026-bottom-RC-ID-1018" userLabel="RC-ID-1026-bottom-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1026" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" constant="25" id="RC-ID-1026-leading-RC-ID-1018" userLabel="RC-ID-1026-leading-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1027" firstAttribute="centerX" secondItem="RC-ID-1018" secondAttribute="centerX" id="RC-ID-1027-centerX-RC-ID-1018" userLabel="RC-ID-1027-centerX-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1027" firstAttribute="centerY" secondItem="RC-ID-1018" secondAttribute="centerY" id="RC-ID-1027-centerY-RC-ID-1018" userLabel="RC-ID-1027-centerY-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1028" firstAttribute="centerX" secondItem="RC-ID-1018" secondAttribute="centerX" id="RC-ID-1028-centerX-RC-ID-1018" userLabel="RC-ID-1028-centerX-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1028" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="top" id="RC-ID-1028-top-RC-ID-1018" userLabel="RC-ID-1028-top-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1029" firstAttribute="centerY" secondItem="RC-ID-1018" secondAttribute="centerY" id="RC-ID-1029-centerY-RC-ID-1018" userLabel="RC-ID-1029-centerY-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1029" firstAttribute="leading" secondItem="RC-ID-1018" secondAttribute="leading" id="RC-ID-1029-leading-RC-ID-1018" userLabel="RC-ID-1029-leading-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1030" firstAttribute="centerY" secondItem="RC-ID-1018" secondAttribute="centerY" id="RC-ID-1030-centerY-RC-ID-1018" userLabel="RC-ID-1030-centerY-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1030" firstAttribute="right" secondItem="RC-ID-1018" secondAttribute="right" id="RC-ID-1030-right-RC-ID-1018" userLabel="RC-ID-1030-right-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1031" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" id="RC-ID-1031-bottom-RC-ID-1018" userLabel="RC-ID-1031-bottom-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1031" firstAttribute="centerX" secondItem="RC-ID-1018" secondAttribute="centerX" id="RC-ID-1031-centerX-RC-ID-1018" userLabel="RC-ID-1031-centerX-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1032" firstAttribute="centerX" secondItem="RC-ID-1018" secondAttribute="centerX" id="RC-ID-1032-centerX-RC-ID-1018" userLabel="RC-ID-1032-centerX-RC-ID-1018"/>
+                                    <constraint firstItem="RC-ID-1032" firstAttribute="centerY" secondItem="RC-ID-1018" secondAttribute="centerY" constant="-74" id="RC-ID-1032-centerY-RC-ID-1018" userLabel="RC-ID-1032-centerY-RC-ID-1018"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RC-ID-1018" firstAttribute="leading" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="leading" constant="18" id="RC-ID-1018-matchLeading-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchLeading-FrameLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1018" firstAttribute="top" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="top" constant="18" id="RC-ID-1018-matchTop-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchTop-FrameLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1018" firstAttribute="trailing" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="trailing" constant="-18" id="RC-ID-1018-matchTrailing-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchTrailing-FrameLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="bottom" constant="18" id="footer-match-top-RC-ID-1018" userLabel="footer-match-top-RC-ID-1018"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FrameLayout-Screen-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LayoutDemo" id="FrameLayout-Screen-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_star" width="72" height="72"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LayoutDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LayoutDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LayoutDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="MainScreen-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--MainScreen-VC-->
+        <scene sceneID="MainScreen-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="MainScreen-VC" id="MainScreen-VC" userLabel="MainScreen-VC" customClass="MainScreen" customModule="LayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="MainScreen-View" userLabel="MainScreen-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1000" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1000" userLabel="RC-ID-1000">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1001" contentMode="scaleToFill" verticalHuggingPriority="350" text="Layout Demo" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="textView" userLabel="textView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="textView-Height-Eq-41"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <button opaque="NO" tag="1002" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnLinearLayout" userLabel="btnLinearLayout">
+                                        <rect key="frame" x="0.0" y="41" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnLinearLayout-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Linear Layout (Nested)" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Linear Layout (Nested)" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Linear Layout (Nested)" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Linear Layout (Nested)" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="LinearLayout_Click:" destination="MainScreen-VC" eventType="touchUpInside" id="btnLinearLayout-LinearLayout-Click"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1003" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnRelativeLayout" userLabel="btnRelativeLayout">
+                                        <rect key="frame" x="0.0" y="89" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnRelativeLayout-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Relative Layout" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Relative Layout" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Relative Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Relative Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RelativeLayout_Click:" destination="MainScreen-VC" eventType="touchUpInside" id="btnRelativeLayout-RelativeLayout-Click"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1004" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnFrameLayout" userLabel="btnFrameLayout">
+                                        <rect key="frame" x="0.0" y="137" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnFrameLayout-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Frame Layout" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Frame Layout" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Frame Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Frame Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="FrameLayout_Click:" destination="MainScreen-VC" eventType="touchUpInside" id="btnFrameLayout-FrameLayout-Click"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1005" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnConstraintLayout" userLabel="btnConstraintLayout">
+                                        <rect key="frame" x="0.0" y="185" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnConstraintLayout-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Constraint Layout" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Constraint Layout" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Constraint Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Constraint Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ConstraintLayout_Click:" destination="MainScreen-VC" eventType="touchUpInside" id="btnConstraintLayout-ConstraintLayout-Click"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1006" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btnTableLayout" userLabel="btnTableLayout">
+                                        <rect key="frame" x="0.0" y="233" width="414" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="btnTableLayout-Height-Eq-48"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Table Layout" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Table Layout" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Table Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Table Layout" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="TableLayout_Click:" destination="MainScreen-VC" eventType="touchUpInside" id="btnTableLayout-TableLayout-Click"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="btnConstraintLayout" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="btnConstraintLayout-alignTrailing-withContainer" userLabel="btnConstraintLayout-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnConstraintLayout" firstAttribute="top" secondItem="btnFrameLayout" secondAttribute="bottom" id="btnConstraintLayout-below-btnFrameLayout" userLabel="btnConstraintLayout-below-btnFrameLayout"/>
+                                    <constraint firstItem="btnConstraintLayout" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="btnConstraintLayout-matchLeading-RC-ID-1000" userLabel="btnConstraintLayout-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="btnFrameLayout" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="btnFrameLayout-alignTrailing-withContainer" userLabel="btnFrameLayout-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnFrameLayout" firstAttribute="top" secondItem="btnRelativeLayout" secondAttribute="bottom" id="btnFrameLayout-below-btnRelativeLayout" userLabel="btnFrameLayout-below-btnRelativeLayout"/>
+                                    <constraint firstItem="btnFrameLayout" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="btnFrameLayout-matchLeading-RC-ID-1000" userLabel="btnFrameLayout-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="btnLinearLayout" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="btnLinearLayout-alignTrailing-withContainer" userLabel="btnLinearLayout-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnLinearLayout" firstAttribute="top" secondItem="textView" secondAttribute="bottom" id="btnLinearLayout-below-textView" userLabel="btnLinearLayout-below-textView"/>
+                                    <constraint firstItem="btnLinearLayout" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="btnLinearLayout-matchLeading-RC-ID-1000" userLabel="btnLinearLayout-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="btnRelativeLayout" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="btnRelativeLayout-alignTrailing-withContainer" userLabel="btnRelativeLayout-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnRelativeLayout" firstAttribute="top" secondItem="btnLinearLayout" secondAttribute="bottom" id="btnRelativeLayout-below-btnLinearLayout" userLabel="btnRelativeLayout-below-btnLinearLayout"/>
+                                    <constraint firstItem="btnRelativeLayout" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="btnRelativeLayout-matchLeading-RC-ID-1000" userLabel="btnRelativeLayout-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="btnTableLayout" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="btnTableLayout-alignTrailing-withContainer" userLabel="btnTableLayout-alignTrailing-withContainer"/>
+                                    <constraint firstItem="btnTableLayout" firstAttribute="top" secondItem="btnConstraintLayout" secondAttribute="bottom" id="btnTableLayout-below-btnConstraintLayout" userLabel="btnTableLayout-below-btnConstraintLayout"/>
+                                    <constraint firstItem="btnTableLayout" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="btnTableLayout-matchLeading-RC-ID-1000" userLabel="btnTableLayout-matchLeading-RC-ID-1000"/>
+                                    <constraint firstItem="textView" firstAttribute="top" secondItem="RC-ID-1000" secondAttribute="top" id="textView-alignTop-withContainer" userLabel="textView-alignTop-withContainer"/>
+                                    <constraint firstItem="textView" firstAttribute="leading" secondItem="RC-ID-1000" secondAttribute="leading" id="textView-leading-RC-ID-1000" userLabel="textView-leading-RC-ID-1000"/>
+                                    <constraint firstItem="textView" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="textView-matchTrailing-RC-ID-1000" userLabel="textView-matchTrailing-RC-ID-1000"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
+                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="leading" secondItem="MainScreen-View-safeArea" secondAttribute="leading" id="RC-ID-1000-matchLeading-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchLeading-MainScreen-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="top" secondItem="MainScreen-View-safeArea" secondAttribute="top" id="RC-ID-1000-matchTop-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchTop-MainScreen-View-safeArea"/>
+                            <constraint firstItem="RC-ID-1000" firstAttribute="trailing" secondItem="MainScreen-View-safeArea" secondAttribute="trailing" id="RC-ID-1000-matchTrailing-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchTrailing-MainScreen-View-safeArea"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="MainScreen-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="MainScreen-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1000" secondAttribute="bottom" id="footer-match-top-RC-ID-1000" userLabel="footer-match-top-RC-ID-1000"/>
+                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="MainScreen-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MainScreen-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LayoutDemo" id="MainScreen-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <image name="RC_btn_default_normal_disable" width="12" height="24"/>
+        <image name="RC_btn_default_selected" width="12" height="24"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
