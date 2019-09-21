@@ -19,11 +19,11 @@
 
 -----
 # ReflectCode layout demo
-This project demonstrates the porting of various Android Layouts.
+This project demonstrates the conversion of various Android Layouts.
 This repository contains the Android source code which was used as input and generated iOS source code project.
 
 ## Android Layouts transformed
-This sample project demonstrates porting of following layouts - 
+This sample project demonstrates conversion of following layouts - 
 * RelativeLayout
 * FrameLayout
 
@@ -51,21 +51,21 @@ Following layouts will be added soon -
 | Control | Attributes |
 |---------|------------|
 | RelativeLayout | layout_centerHorizontal, layout_centerVertical, layout_toLeftOf, layout_toRightOf, layout_above, layout_below, layout_alignParentTop, layout_alignParentBottom, layout_alignParentRight, layout_alignParentLeft |
-| FrameLayout | layout_marginTop, layout_gravity = right, left, right|bottom, left|bottom, center, center_horizontal, center_vertical, right|center_vertical, bottom|center_horizontal | 
+| FrameLayout | layout_marginTop, layout_gravity = right, left, right+bottom, left+bottom, center, center_horizontal, center_vertical, right+center_vertical, bottom+center_horizontal | 
 
 -----
 
 ## Screen shots
 
 Screen shot of RelativeLayout - 
-<img src="/Visuals/relative_layout_portrait.png" alt="relative_layout_portrait"/>
-<img src="/Visuals/relative_layout_landscape.png" alt="relative_layout_landscape"/>
+<img src="/Visuals/relative_layout_portrait.jpg" alt="relative_layout_portrait"/>
+<img src="/Visuals/relative_layout_landscape.jpg" alt="relative_layout_landscape"/>
 
 -----
 
 Screen shot of FrameLayout - 
-<img src="/Visuals/frame_layout_portrait.png" alt="frame_layout_portrait"/>
-<img src="/Visuals/frame_layout_landscape.png" alt="frame_layout_landscape"/>
+<img src="/Visuals/frame_layout_portrait.jpg" alt="frame_layout_portrait"/>
+<img src="/Visuals/frame_layout_landscape.jpg" alt="frame_layout_landscape"/>
 
 -----
 
