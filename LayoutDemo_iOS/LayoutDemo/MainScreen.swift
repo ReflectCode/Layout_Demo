@@ -23,7 +23,8 @@ import UIKit
 public class MainScreen : UIViewController {
 
     @IBAction func LinearLayout_Click(_ v: UIView?){
-        // WIP
+        let intent_VC = UIStoryboard(name: "linear_nested", bundle: nil).instantiateViewController(withIdentifier: "LinearLayout-Screen-VC") as! LinearLayout_Screen
+        self.navigationController?.pushViewController(intent_VC, animated: true)
     }
 
 
@@ -40,7 +41,8 @@ public class MainScreen : UIViewController {
 
 
     @IBAction func ConstraintLayout_Click(_ v: UIView?){
-       // WIP
+        let intent_VC = UIStoryboard(name: "constraint_layout", bundle: nil).instantiateViewController(withIdentifier: "ConstraintLayout-Screen-VC") as! ConstraintLayout_Screen
+        self.navigationController?.pushViewController(intent_VC, animated: true)
     }
 
 

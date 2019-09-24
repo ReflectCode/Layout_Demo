@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LayoutDemo-NavControl">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="DNV-xg-evK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LayoutDemo-NavControl" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ulm-4h-Ru3">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" name="colorPrimary"/>
+                        <textAttributes key="titleTextAttributes"/>
+                        <textAttributes key="largeTitleTextAttributes"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LayoutDemo-ToolBar">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="LinearLayout-Screen-VC" kind="relationship" relationship="rootViewController" id="hC6-UQ-eHy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccE-g8-4ju" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1122" y="600"/>
+        </scene>
+        <!--LinearLayout-Screen-VC-->
+        <scene sceneID="LinearLayout-Screen-VC-Scene">
+            <objects>
+                <viewController storyboardIdentifier="LinearLayout-Screen-VC" id="LinearLayout-Screen-VC" userLabel="LinearLayout-Screen-VC" customClass="LinearLayout_Screen" customModule="LayoutDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="Root-View" id="LinearLayout-Screen-View" userLabel="LinearLayout-Screen-View">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view opaque="NO" clipsSubviews="YES" tag="1033" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="layout-V-1" userLabel="layout-V-1">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1034" contentMode="scaleToFill" verticalHuggingPriority="350" text="Linear Layout demo" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="999" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="RC-ID-1034" userLabel="RC-ID-1034">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="RC-ID-1034-Height-Eq-28"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </label>
+                                    <button opaque="NO" tag="1035" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-1-1" userLabel="button-1-1">
+                                        <rect key="frame" x="0.0" y="28" width="91" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="button-1-1-Height-Eq-48"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="button-1-1-Width-Eq-91"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Button 1-1" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Button 1-1" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Button 1-1" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Button 1-1" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" tag="1036" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-2-1" userLabel="button-2-1">
+                                        <rect key="frame" x="0.0" y="76" width="124" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="button-2-1-Height-Eq-50"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="124" id="button-2-1-Width-Eq-124"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                        <state key="normal" title="Button 2-1" backgroundImage="RC_btn_default_normal">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="disabled" title="Button 2-1" backgroundImage="RC_btn_default_normal_disable">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="Button 2-1" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" title="Button 2-1" backgroundImage="RC_btn_default_selected">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1037" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="layout-H-3" userLabel="layout-H-3">
+                                        <rect key="frame" x="0.0" y="126" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1038" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-3-1" userLabel="button-3-1">
+                                                <rect key="frame" x="44" y="0.0" width="124" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="button-3-1-Height-Eq-50"/>
+                                                    <constraint firstAttribute="width" constant="124" id="button-3-1-Width-Eq-124"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="Button 3-1" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="Button 3-1" backgroundImage="RC_btn_default_normal_disable">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="Button 3-1" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="Button 3-1" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="1039" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-3-2" userLabel="button-3-2">
+                                                <rect key="frame" x="168" y="1" width="91" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-3-2-Height-Eq-48"/>
+                                                    <constraint firstAttribute="width" constant="91" id="button-3-2-Width-Eq-91"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="Button 3-2" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="Button 3-2" backgroundImage="RC_btn_default_normal_disable">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="Button 3-2" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="Button 3-2" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="1040" contentMode="scaleToFill" horizontalHuggingPriority="350" verticalHuggingPriority="350" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-3-3" userLabel="button-3-3">
+                                                <rect key="frame" x="259" y="1" width="111" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-3-3-Height-Eq-48"/>
+                                                    <constraint firstAttribute="width" constant="111" id="button-3-3-Width-Eq-111"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="CheckBox 3-3" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="CheckBox 3-3" backgroundImage="RC_btn_default_normal_disable">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="CheckBox 3-3" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="CheckBox 3-3" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.070588235299999996" green="0.66666666669999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="button-3-1" firstAttribute="centerX" secondItem="layout-H-3" secondAttribute="centerX" constant="-101" id="button-3-1-alignCenterHorizontal-inContainer" userLabel="button-3-1-alignCenterHorizontal-inContainer"/>
+                                            <constraint firstItem="button-3-1" firstAttribute="centerY" secondItem="layout-H-3" secondAttribute="centerY" id="button-3-1-centerY-layout-H-3" userLabel="button-3-1-centerY-layout-H-3"/>
+                                            <constraint firstItem="button-3-2" firstAttribute="centerY" secondItem="layout-H-3" secondAttribute="centerY" id="button-3-2-centerY-layout-H-3" userLabel="button-3-2-centerY-layout-H-3"/>
+                                            <constraint firstItem="button-3-2" firstAttribute="left" secondItem="button-3-1" secondAttribute="right" id="button-3-2-toRightOf-button-3-1" userLabel="button-3-2-toRightOf-button-3-1"/>
+                                            <constraint firstItem="button-3-3" firstAttribute="centerY" secondItem="layout-H-3" secondAttribute="centerY" id="button-3-3-centerY-layout-H-3" userLabel="button-3-3-centerY-layout-H-3"/>
+                                            <constraint firstItem="button-3-3" firstAttribute="left" secondItem="button-3-2" secondAttribute="right" id="button-3-3-toRightOf-button-3-2" userLabel="button-3-3-toRightOf-button-3-2"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="layout-H-3-Height-Eq-50"/>
+                                            <constraint firstAttribute="height" priority="200" constant="50" id="layout-H-3-Height-placeHolder"/>
+                                        </constraints>
+                                    </view>
+                                    <view opaque="NO" clipsSubviews="YES" tag="1041" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="layout-V-4" userLabel="layout-V-4">
+                                        <rect key="frame" x="0.0" y="176" width="414" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1042" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-1" userLabel="button-4-1">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="button-4-1-Height-Eq-48"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="Button 4-1" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="Button 4-1" backgroundImage="RC_btn_default_normal_disable">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="Button 4-1" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="Button 4-1" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" tag="1043" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="right" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-2" userLabel="button-4-2">
+                                                <rect key="frame" x="0.0" y="48" width="414" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="button-4-2-Height-Eq-48"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                <state key="normal" title="Button 4-2" backgroundImage="RC_btn_default_normal">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="disabled" title="Button 4-2" backgroundImage="RC_btn_default_normal_disable">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="selected" title="Button 4-2" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <state key="highlighted" title="Button 4-2" backgroundImage="RC_btn_default_selected">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                            </button>
+                                            <view opaque="NO" clipsSubviews="YES" tag="1044" contentMode="scaleToFill" horizontalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="layout-H-4-3" userLabel="layout-H-4-3">
+                                                <rect key="frame" x="0.0" y="96" width="414" height="48"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1045" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-3-1" userLabel="button-4-3-1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-4-3-1-Height-Eq-48"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                        <state key="normal" title="Btn 4-3-1" backgroundImage="RC_btn_default_normal">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="disabled" title="Btn 4-3-1" backgroundImage="RC_btn_default_normal_disable">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="selected" title="Btn 4-3-1" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" title="Btn 4-3-1" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="1046" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="right" contentVerticalAlignment="top" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-3-2" userLabel="button-4-3-2">
+                                                        <rect key="frame" x="103.66666666666669" y="0.0" width="103.33333333333331" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-4-3-2-Height-Eq-48"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                        <state key="normal" title="Btn 4-3-2" backgroundImage="RC_btn_default_normal">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="disabled" title="Btn 4-3-2" backgroundImage="RC_btn_default_normal_disable">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="selected" title="Btn 4-3-2" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" title="Btn 4-3-2" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="1047" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-3-3" userLabel="button-4-3-3">
+                                                        <rect key="frame" x="206.99999999999997" y="0.0" width="103.66666666666666" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-4-3-3-Height-Eq-48"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                        <state key="normal" title="Btn 4-3-3" backgroundImage="RC_btn_default_normal">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="disabled" title="Btn 4-3-3" backgroundImage="RC_btn_default_normal_disable">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="selected" title="Btn 4-3-3" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" title="Btn 4-3-3" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" tag="1048" contentMode="scaleToFill" verticalHuggingPriority="350" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="button-4-3-4" userLabel="button-4-3-4">
+                                                        <rect key="frame" x="310.66666666666669" y="0.0" width="103.33333333333331" height="48"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="button-4-3-4-Height-Eq-48"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <inset key="contentEdgeInsets" minX="13" minY="13" maxX="13" maxY="13"/>
+                                                        <state key="normal" title="Btn 4-3_4" backgroundImage="RC_btn_default_normal">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="disabled" title="Btn 4-3_4" backgroundImage="RC_btn_default_normal_disable">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.53333333329999999" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="selected" title="Btn 4-3_4" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                        <state key="highlighted" title="Btn 4-3_4" backgroundImage="RC_btn_default_selected">
+                                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="button-4-3-1" firstAttribute="leading" secondItem="layout-H-4-3" secondAttribute="leading" id="button-4-3-1-alignLeading-withContainer" userLabel="button-4-3-1-alignLeading-withContainer"/>
+                                                    <constraint firstItem="button-4-3-1" firstAttribute="top" secondItem="layout-H-4-3" secondAttribute="top" id="button-4-3-1-top-layout-H-4-3" userLabel="button-4-3-1-top-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-1" firstAttribute="width" secondItem="layout-H-4-3" secondAttribute="width" multiplier="0.25" id="button-4-3-1-widthRatioTo-layout-H-4-3" userLabel="button-4-3-1-widthRatioTo-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-2" firstAttribute="left" secondItem="button-4-3-1" secondAttribute="right" id="button-4-3-2-toRightOf-button-4-3-1" userLabel="button-4-3-2-toRightOf-button-4-3-1"/>
+                                                    <constraint firstItem="button-4-3-2" firstAttribute="top" secondItem="layout-H-4-3" secondAttribute="top" id="button-4-3-2-top-layout-H-4-3" userLabel="button-4-3-2-top-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-2" firstAttribute="width" secondItem="layout-H-4-3" secondAttribute="width" multiplier="0.25" id="button-4-3-2-widthRatioTo-layout-H-4-3" userLabel="button-4-3-2-widthRatioTo-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-3" firstAttribute="left" secondItem="button-4-3-2" secondAttribute="right" id="button-4-3-3-toRightOf-button-4-3-2" userLabel="button-4-3-3-toRightOf-button-4-3-2"/>
+                                                    <constraint firstItem="button-4-3-3" firstAttribute="top" secondItem="layout-H-4-3" secondAttribute="top" id="button-4-3-3-top-layout-H-4-3" userLabel="button-4-3-3-top-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-3" firstAttribute="width" secondItem="layout-H-4-3" secondAttribute="width" multiplier="0.25" id="button-4-3-3-widthRatioTo-layout-H-4-3" userLabel="button-4-3-3-widthRatioTo-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-4" firstAttribute="trailing" secondItem="layout-H-4-3" secondAttribute="trailing" priority="900" id="button-4-3-4-alignTrailing-withContainer" userLabel="button-4-3-4-alignTrailing-withContainer"/>
+                                                    <constraint firstItem="button-4-3-4" firstAttribute="left" secondItem="button-4-3-3" secondAttribute="right" id="button-4-3-4-toRightOf-button-4-3-3" userLabel="button-4-3-4-toRightOf-button-4-3-3"/>
+                                                    <constraint firstItem="button-4-3-4" firstAttribute="top" secondItem="layout-H-4-3" secondAttribute="top" id="button-4-3-4-top-layout-H-4-3" userLabel="button-4-3-4-top-layout-H-4-3"/>
+                                                    <constraint firstItem="button-4-3-4" firstAttribute="width" secondItem="layout-H-4-3" secondAttribute="width" multiplier="0.25" id="button-4-3-4-widthRatioTo-layout-H-4-3" userLabel="button-4-3-4-widthRatioTo-layout-H-4-3"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="layout-H-4-3-Height-Eq-48"/>
+                                                    <constraint firstAttribute="height" priority="200" constant="48" id="layout-H-4-3-Height-placeHolder"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.80000000000000004" green="0.73333333329999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="button-4-1" firstAttribute="trailing" secondItem="layout-V-4" secondAttribute="trailing" id="button-4-1-alignTrailing-withContainer" userLabel="button-4-1-alignTrailing-withContainer"/>
+                                            <constraint firstItem="button-4-1" firstAttribute="leading" secondItem="layout-V-4" secondAttribute="leading" id="button-4-1-matchLeading-layout-V-4" userLabel="button-4-1-matchLeading-layout-V-4"/>
+                                            <constraint firstItem="button-4-1" firstAttribute="top" secondItem="layout-V-4" secondAttribute="top" id="button-4-1-top-layout-V-4" userLabel="button-4-1-top-layout-V-4"/>
+                                            <constraint firstItem="button-4-2" firstAttribute="trailing" secondItem="layout-V-4" secondAttribute="trailing" id="button-4-2-alignTrailing-withContainer" userLabel="button-4-2-alignTrailing-withContainer"/>
+                                            <constraint firstItem="button-4-2" firstAttribute="top" secondItem="button-4-1" secondAttribute="bottom" id="button-4-2-below-button-4-1" userLabel="button-4-2-below-button-4-1"/>
+                                            <constraint firstItem="button-4-2" firstAttribute="leading" secondItem="layout-V-4" secondAttribute="leading" id="button-4-2-matchLeading-layout-V-4" userLabel="button-4-2-matchLeading-layout-V-4"/>
+                                            <constraint firstItem="layout-H-4-3" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="layout-V-4" secondAttribute="bottom" id="layout-H-4-3-Bottom-LessThan-layout-V-4-Bottom" userLabel="layout-H-4-3-Bottom-LessThan-layout-V-4-Bottom"/>
+                                            <constraint firstItem="layout-H-4-3" firstAttribute="top" secondItem="button-4-2" secondAttribute="bottom" id="layout-H-4-3-below-button-4-2" userLabel="layout-H-4-3-below-button-4-2"/>
+                                            <constraint firstItem="layout-H-4-3" firstAttribute="bottom" secondItem="layout-V-4" secondAttribute="bottom" priority="100" id="layout-H-4-3-bottom-max" userLabel="layout-H-4-3-bottom-max"/>
+                                            <constraint firstItem="layout-H-4-3" firstAttribute="leading" secondItem="layout-V-4" secondAttribute="leading" id="layout-H-4-3-matchLeading-layout-V-4" userLabel="layout-H-4-3-matchLeading-layout-V-4"/>
+                                            <constraint firstItem="layout-H-4-3" firstAttribute="trailing" secondItem="layout-V-4" secondAttribute="trailing" id="layout-H-4-3-matchTrailing-layout-V-4" userLabel="layout-H-4-3-matchTrailing-layout-V-4"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="144" id="layout-V-4-Height-Eq-144"/>
+                                            <constraint firstAttribute="height" priority="200" constant="144" id="layout-V-4-Height-placeHolder"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RC-ID-1034" firstAttribute="top" secondItem="layout-V-1" secondAttribute="top" id="RC-ID-1034-alignTop-withContainer" userLabel="RC-ID-1034-alignTop-withContainer"/>
+                                    <constraint firstItem="RC-ID-1034" firstAttribute="leading" secondItem="layout-V-1" secondAttribute="leading" id="RC-ID-1034-leading-layout-V-1" userLabel="RC-ID-1034-leading-layout-V-1"/>
+                                    <constraint firstItem="RC-ID-1034" firstAttribute="trailing" secondItem="layout-V-1" secondAttribute="trailing" id="RC-ID-1034-matchTrailing-layout-V-1" userLabel="RC-ID-1034-matchTrailing-layout-V-1"/>
+                                    <constraint firstItem="button-1-1" firstAttribute="top" secondItem="RC-ID-1034" secondAttribute="bottom" id="button-1-1-below-RC-ID-1034" userLabel="button-1-1-below-RC-ID-1034"/>
+                                    <constraint firstItem="button-1-1" firstAttribute="leading" secondItem="layout-V-1" secondAttribute="leading" id="button-1-1-leading-layout-V-1" userLabel="button-1-1-leading-layout-V-1"/>
+                                    <constraint firstItem="button-1-1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="layout-V-1" secondAttribute="trailing" constant="-323" id="button-1-1-matchTrailing-layout-V-1" userLabel="button-1-1-matchTrailing-layout-V-1"/>
+                                    <constraint firstItem="button-2-1" firstAttribute="top" secondItem="button-1-1" secondAttribute="bottom" id="button-2-1-below-button-1-1" userLabel="button-2-1-below-button-1-1"/>
+                                    <constraint firstItem="button-2-1" firstAttribute="leading" secondItem="layout-V-1" secondAttribute="leading" id="button-2-1-leading-layout-V-1" userLabel="button-2-1-leading-layout-V-1"/>
+                                    <constraint firstItem="button-2-1" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="layout-V-1" secondAttribute="trailing" constant="-290" id="button-2-1-matchTrailing-layout-V-1" userLabel="button-2-1-matchTrailing-layout-V-1"/>
+                                    <constraint firstItem="layout-H-3" firstAttribute="top" secondItem="button-2-1" secondAttribute="bottom" id="layout-H-3-below-button-2-1" userLabel="layout-H-3-below-button-2-1"/>
+                                    <constraint firstItem="layout-H-3" firstAttribute="leading" secondItem="layout-V-1" secondAttribute="leading" id="layout-H-3-matchLeading-layout-V-1" userLabel="layout-H-3-matchLeading-layout-V-1"/>
+                                    <constraint firstItem="layout-H-3" firstAttribute="trailing" secondItem="layout-V-1" secondAttribute="trailing" id="layout-H-3-matchTrailing-layout-V-1" userLabel="layout-H-3-matchTrailing-layout-V-1"/>
+                                    <constraint firstItem="layout-V-4" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="layout-V-1" secondAttribute="bottom" constant="-8" id="layout-V-4-Bottom-LessThan-layout-V-1-Bottom" userLabel="layout-V-4-Bottom-LessThan-layout-V-1-Bottom"/>
+                                    <constraint firstItem="layout-V-4" firstAttribute="top" secondItem="layout-H-3" secondAttribute="bottom" id="layout-V-4-below-layout-H-3" userLabel="layout-V-4-below-layout-H-3"/>
+                                    <constraint firstItem="layout-V-4" firstAttribute="bottom" secondItem="layout-V-1" secondAttribute="bottom" priority="100" constant="-352" id="layout-V-4-bottom-max" userLabel="layout-V-4-bottom-max"/>
+                                    <constraint firstItem="layout-V-4" firstAttribute="leading" secondItem="layout-V-1" secondAttribute="leading" id="layout-V-4-matchLeading-layout-V-1" userLabel="layout-V-4-matchLeading-layout-V-1"/>
+                                    <constraint firstItem="layout-V-4" firstAttribute="trailing" secondItem="layout-V-1" secondAttribute="trailing" id="layout-V-4-matchTrailing-layout-V-1" userLabel="layout-V-4-matchTrailing-layout-V-1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="LinearLayout-Screen-View-safeArea" firstAttribute="bottom" secondItem="layout-V-1" secondAttribute="bottom" id="layout-V-1-matchBottom-LinearLayout-Screen-View-safeArea" userLabel="layout-V-1-matchBottom-LinearLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="layout-V-1" firstAttribute="leading" secondItem="LinearLayout-Screen-View-safeArea" secondAttribute="leading" id="layout-V-1-matchLeading-LinearLayout-Screen-View-safeArea" userLabel="layout-V-1-matchLeading-LinearLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="layout-V-1" firstAttribute="top" secondItem="LinearLayout-Screen-View-safeArea" secondAttribute="top" id="layout-V-1-matchTop-LinearLayout-Screen-View-safeArea" userLabel="layout-V-1-matchTop-LinearLayout-Screen-View-safeArea"/>
+                            <constraint firstItem="layout-V-1" firstAttribute="trailing" secondItem="LinearLayout-Screen-View-safeArea" secondAttribute="trailing" id="layout-V-1-matchTrailing-LinearLayout-Screen-View-safeArea" userLabel="layout-V-1-matchTrailing-LinearLayout-Screen-View-safeArea"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LinearLayout-Screen-View-safeArea"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="LayoutDemo" id="LinearLayout-Screen-VC-Nav-ID"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-372" y="600"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RC_btn_default_normal" width="12" height="24"/>
+        <image name="RC_btn_default_normal_disable" width="12" height="24"/>
+        <image name="RC_btn_default_selected" width="12" height="24"/>
+        <namedColor name="colorPrimary">
+            <color red="0.0" green="0.52156862745098043" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

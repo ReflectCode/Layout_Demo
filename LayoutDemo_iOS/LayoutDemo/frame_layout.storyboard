@@ -191,23 +191,13 @@
                                     <constraint firstItem="RC-ID-1032" firstAttribute="centerY" secondItem="RC-ID-1018" secondAttribute="centerY" constant="-74" id="RC-ID-1032-centerY-RC-ID-1018" userLabel="RC-ID-1032-centerY-RC-ID-1018"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
-                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RC-ID-1018" firstAttribute="leading" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="leading" constant="18" id="RC-ID-1018-matchLeading-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchLeading-FrameLayout-Screen-View-safeArea"/>
                             <constraint firstItem="RC-ID-1018" firstAttribute="top" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="top" constant="18" id="RC-ID-1018-matchTop-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchTop-FrameLayout-Screen-View-safeArea"/>
                             <constraint firstItem="RC-ID-1018" firstAttribute="trailing" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="trailing" constant="-18" id="RC-ID-1018-matchTrailing-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchTrailing-FrameLayout-Screen-View-safeArea"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1018" secondAttribute="bottom" constant="18" id="footer-match-top-RC-ID-1018" userLabel="footer-match-top-RC-ID-1018"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="FrameLayout-Screen-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                            <constraint firstItem="FrameLayout-Screen-View-safeArea" firstAttribute="bottom" secondItem="RC-ID-1018" secondAttribute="bottom" constant="18" id="RC-ID-1018-matchBottom-FrameLayout-Screen-View-safeArea" userLabel="RC-ID-1018-matchBottom-FrameLayout-Screen-View-safeArea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FrameLayout-Screen-View-safeArea"/>
                     </view>

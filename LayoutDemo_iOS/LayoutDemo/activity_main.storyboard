@@ -192,23 +192,13 @@
                                     <constraint firstItem="textView" firstAttribute="trailing" secondItem="RC-ID-1000" secondAttribute="trailing" id="textView-matchTrailing-RC-ID-1000" userLabel="textView-matchTrailing-RC-ID-1000"/>
                                 </constraints>
                             </view>
-                            <view clipsSubviews="YES" tag="101600222" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" restorationIdentifier="Footer-View" translatesAutoresizingMaskIntoConstraints="NO" id="Footer-View-ID" userLabel="Footer-View">
-                                <rect key="frame" x="0.0" y="736" width="414" height="0.0"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="Footer-View-Height"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="RC-ID-1000" firstAttribute="leading" secondItem="MainScreen-View-safeArea" secondAttribute="leading" id="RC-ID-1000-matchLeading-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchLeading-MainScreen-View-safeArea"/>
                             <constraint firstItem="RC-ID-1000" firstAttribute="top" secondItem="MainScreen-View-safeArea" secondAttribute="top" id="RC-ID-1000-matchTop-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchTop-MainScreen-View-safeArea"/>
                             <constraint firstItem="RC-ID-1000" firstAttribute="trailing" secondItem="MainScreen-View-safeArea" secondAttribute="trailing" id="RC-ID-1000-matchTrailing-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchTrailing-MainScreen-View-safeArea"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="bottom" secondItem="MainScreen-View-safeArea" secondAttribute="bottom" id="footer-match-botton"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="leading" secondItem="MainScreen-View-safeArea" secondAttribute="leading" id="footer-match-leading"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="top" secondItem="RC-ID-1000" secondAttribute="bottom" id="footer-match-top-RC-ID-1000" userLabel="footer-match-top-RC-ID-1000"/>
-                            <constraint firstItem="Footer-View-ID" firstAttribute="trailing" secondItem="MainScreen-View-safeArea" secondAttribute="trailing" id="footer-match-trailing"/>
+                            <constraint firstItem="MainScreen-View-safeArea" firstAttribute="bottom" secondItem="RC-ID-1000" secondAttribute="bottom" id="RC-ID-1000-matchBottom-MainScreen-View-safeArea" userLabel="RC-ID-1000-matchBottom-MainScreen-View-safeArea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MainScreen-View-safeArea"/>
                     </view>
