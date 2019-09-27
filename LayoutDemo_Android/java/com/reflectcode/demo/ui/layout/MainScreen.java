@@ -57,4 +57,9 @@ public class MainScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
+    void ScrollView_Click(View v){
+        Intent intent = new Intent(this, ScrollView_Screen.class);
+        startActivity(intent);
+    }
+
 }

@@ -13,4 +13,20 @@
     <string name="camera_value">Leica M Typ 240</string>
     <string name="singapore">Singapore</string>
 
+    <string name="no_image">No Image</string>
+    <string name="nested_scroll_text">Tutorialwing.com presents tutorial on NestedScrollView!
+        NestedScrollView is just like ScrollView, but it supports acting as both a nested
+        scrolling parent and child on both new and old versions of Android. Nested scrolling
+        is enabled by default. NestedScrollView is used when there is need for scrolling inside
+        another scrolling view. Normally this would be difficult task because system would be
+        unable to decide which view to scroll. This is where NestedScrollView comes into role.
+
+        NestedScrollView is used when there is need for scrolling inside
+        another scrolling view. Normally this would be difficult task because system would be
+        unable to decide which view to scroll. This is where NestedScrollView comes into role.
+
+        Also contains demo for HorizontalScrollView.
+        --- End ---
+    </string>
+
 </resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/rootView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ScrollView Demo"
+            android:textStyle="bold"
+            android:textSize="25dp"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedSV"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:scrollbars="vertical"
+            android:background="@android:color/white"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/nsvRoot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#CCF">
+
+                <TextView
+                    android:id="@+id/nsvText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nested_scroll_text"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/imgFruit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/guava"/>
+
+        <HorizontalScrollView
+            android:id="@+id/peopleSV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/peopleRoot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:background="#CCF">
+
+                <TextView
+                    android:id="@+id/title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Pic-1"
+                    />
+
+                <ImageView
+                    android:id="@+id/imgPic1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/contact_eight"/>
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Pic-2"/>
+
+
+                <ImageView
+                    android:id="@+id/imgPic2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/contact_six" />
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Pic-3"/>
+
+
+                <ImageView
+                    android:id="@+id/imgPic3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/contact_ten"/>
+
+                <TextView
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Pic-4"/>
+
+
+                <ImageView
+                    android:id="@+id/imgPic4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/contact_three"/>
+
+            </LinearLayout>
+
+
+
+        </HorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/imgFruit2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/jackfruit"/>
+
+        <ImageView
+            android:id="@+id/imgFruit3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/mix_fruit"/>
+
+        <ImageView
+            android:id="@+id/imgFruit4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/pomegranate"/>
+
+        <ImageView
+            android:id="@+id/imgFruit5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/strawberry"/>
+
+        <ImageView
+            android:id="@+id/imgFruit6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/no_image"
+            android:src="@drawable/zespri_kiwi"/>
+
+    </LinearLayout>
+
+</ScrollView>

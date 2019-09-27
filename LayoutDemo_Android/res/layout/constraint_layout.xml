@@ -25,24 +25,32 @@
         android:scaleType="centerCrop"
         android:src="@drawable/singapore"
 
+        tools:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_creator="1"
         app:layout_constraintBottom_toBottomOf="@+id/favorite"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main_done"
-        app:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/activity_main_done"
+
+        tools:layout_constraintTop_creator="1"
         app:layout_constraintTop_creator="1"
         app:layout_constraintTop_toTopOf="@+id/activity_main_done"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_editor_absoluteX="0dp"
-        app:layout_editor_absoluteY="0dp"
-        tools:layout_constraintBottom_creator="1"
+
+        app:layout_constraintVertical_bias="0.5"
+
+
         tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main_done"
+
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_main_done"
+
+        app:layout_constraintHorizontal_bias="1.0"
+
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        app:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_editor_absoluteY="0dp"
+        />
 
     <ImageView
         android:id="@+id/favorite"
@@ -55,20 +63,28 @@
         android:padding="5dp"
         android:src="@drawable/ic_star"
 
-        app:layout_constraintBottom_creator="0"
-        app:layout_constraintBottom_toBottomOf="@+id/activity_main_done"
+        tools:layout_constraintRight_creator="0"
         app:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/activity_main_done"
+
+
+        tools:layout_constraintTop_creator="0"
         app:layout_constraintTop_creator="1"
         app:layout_constraintTop_toTopOf="@+id/activity_main_done"
-        app:layout_constraintVertical_bias="0.19"
-        app:layout_editor_absoluteX="359dp"
-        app:layout_editor_absoluteY="104dp"
+
         tools:layout_constraintBottom_creator="0"
-        tools:layout_constraintRight_creator="0"
-        tools:layout_constraintTop_creator="0"
+        app:layout_constraintBottom_creator="0"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_main_done"
+
+        app:layout_constraintVertical_bias="0.19"
+
+
         tools:layout_editor_absoluteX="359dp"
-        tools:layout_editor_absoluteY="104dp" />
+        app:layout_editor_absoluteX="359dp"
+
+        tools:layout_editor_absoluteY="104dp"
+        app:layout_editor_absoluteY="104dp"
+        />
 
     <TextView
         android:id="@+id/title"
@@ -167,17 +183,21 @@
         android:inputType="textPersonName"
         android:text="@string/camera_settings"
 
+        tools:layout_constraintLeft_creator="1"
         app:layout_constraintLeft_creator="1"
+        app:layout_constraintStart_toEndOf="@+id/settingsLabel"
+
+        tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/description"
-        app:layout_constraintStart_toEndOf="@+id/settingsLabel"
+
+        tools:layout_constraintTop_creator="0"
         app:layout_constraintTop_creator="1"
         app:layout_constraintTop_toBottomOf="@+id/cameraType"
+
         app:layout_editor_absoluteX="73dp"
         app:layout_editor_absoluteY="225dp"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="0" />
+        />
 
     <Button
         android:id="@+id/upload"
@@ -227,19 +247,25 @@
         android:text="@string/singapore_description"
         android:textSize="15sp"
 
-        app:layout_constraintBottom_creator="0"
-        app:layout_constraintBottom_toTopOf="@+id/discard"
-        app:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/activity_main_done"
-        app:layout_constraintRight_creator="1"
-        app:layout_constraintRight_toRightOf="@+id/activity_main_done"
+        tools:layout_constraintTop_creator="1"
         app:layout_constraintTop_creator="0"
         app:layout_constraintTop_toBottomOf="@+id/settings"
+
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_creator="0"
+        app:layout_constraintBottom_toTopOf="@+id/discard"
+
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/activity_main_done"
+
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main_done"
+
+
         app:layout_editor_absoluteX="16dp"
         app:layout_editor_absoluteY="274dp"
-        tools:layout_constraintBottom_creator="1"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1" />
+        />
 
 </android.support.constraint.ConstraintLayout>

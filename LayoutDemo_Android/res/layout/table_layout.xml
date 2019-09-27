@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
 
     <TextView
+        android:id="@+id/tvTitle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Linear Layout demo"
+        android:text="Table Layout demo"
         android:textSize="20dp"
         android:textStyle="bold"
         android:gravity="center"/>
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <TableLayout
+        android:id="@+id/tableView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
@@ -25,110 +28,128 @@
         >
 
         <TableRow
+            android:id="@+id/rowHeader"
             android:background="#0079D6"
             android:padding="5dp"
             android:layout_margin="0dp"
             >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/rowHeaderC1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="UserId" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/rowHeaderC2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="User Name" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/rowHeaderC3"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Location" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row1"
             android:background="#DAE8FC"
             android:padding="5dp"
             >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row1C1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="1" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row1C2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Suresh Dasari" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row1C3"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Hyderabad" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row2"
             android:background="#DAE8FC"
             android:padding="5dp"
             >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row2C1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="2" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row2C2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Rohini Alavala" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row2C3"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Guntur" />
         </TableRow>
 
         <TableRow
+            android:id="@+id/row3"
             android:background="#DAE8FC"
             android:padding="5dp"
             >
 
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row3C1"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="3" />
             <TextView
-                android:layout_width="wrap_content"
+                android:id="@+id/row3C2"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:text="Trishika Dasari" />
 
             <LinearLayout
+                android:id="@+id/row3C3"
                 xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/row3C1tv1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="UserId" />
+                    android:text="Location-1" />
+
                 <TextView
+                    android:id="@+id/row3C1tv2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="UserId" />
+                    android:text="Location-2" />
+
                 <TextView
+                    android:id="@+id/row3C1tv3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="UserId" />
+                    android:text="Location-3" />
 
             </LinearLayout>
 

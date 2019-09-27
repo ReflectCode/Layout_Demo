@@ -22,6 +22,7 @@
         <activity android:name=".FrameLayout_Screen"> </activity>
         <activity android:name=".ConstraintLayout_Screen"> </activity>
         <activity android:name=".TableLayout_Screen"> </activity>
+        <activity android:name=".ScrollView_Screen"> </activity>
 
     </application>
 

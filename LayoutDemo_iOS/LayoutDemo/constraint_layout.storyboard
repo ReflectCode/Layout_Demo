@@ -74,6 +74,7 @@
                                     </label>
                                     <textField opaque="NO" tag="1011" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Leica M Typ 240" minimumFontSize="18" background="RC_text_field_underline" translatesAutoresizingMaskIntoConstraints="NO" id="cameraType" userLabel="cameraType">
                                         <rect key="frame" x="73" y="201.33333333333331" width="210" height="20"/>
+                                        <accessibility key="accessibilityConfiguration" label="LabelTypeCamera"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="cameraType-Height-Eq-20"/>
                                         </constraints>
@@ -200,10 +201,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="ConstraintLayout-Screen-View-safeArea" firstAttribute="bottom" secondItem="activity-main-done" secondAttribute="bottom" id="activity-main-done-matchBottom-ConstraintLayout-Screen-View-safeArea" userLabel="activity-main-done-matchBottom-ConstraintLayout-Screen-View-safeArea"/>
                             <constraint firstItem="activity-main-done" firstAttribute="leading" secondItem="ConstraintLayout-Screen-View-safeArea" secondAttribute="leading" id="activity-main-done-matchLeading-ConstraintLayout-Screen-View-safeArea" userLabel="activity-main-done-matchLeading-ConstraintLayout-Screen-View-safeArea"/>
                             <constraint firstItem="activity-main-done" firstAttribute="top" secondItem="ConstraintLayout-Screen-View-safeArea" secondAttribute="top" id="activity-main-done-matchTop-ConstraintLayout-Screen-View-safeArea" userLabel="activity-main-done-matchTop-ConstraintLayout-Screen-View-safeArea"/>
                             <constraint firstItem="activity-main-done" firstAttribute="trailing" secondItem="ConstraintLayout-Screen-View-safeArea" secondAttribute="trailing" id="activity-main-done-matchTrailing-ConstraintLayout-Screen-View-safeArea" userLabel="activity-main-done-matchTrailing-ConstraintLayout-Screen-View-safeArea"/>
-                            <constraint firstItem="ConstraintLayout-Screen-View-safeArea" firstAttribute="bottom" secondItem="activity-main-done" secondAttribute="bottom" id="activity-main-done-matchBottom-ConstraintLayout-Screen-View-safeArea" userLabel="activity-main-done-matchBottom-ConstraintLayout-Screen-View-safeArea"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ConstraintLayout-Screen-View-safeArea"/>
                     </view>

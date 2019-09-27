@@ -47,10 +47,16 @@ public class MainScreen : UIViewController {
 
 
     @IBAction func TableLayout_Click(_ v: UIView?){
-       // WIP
+        let intent_VC = UIStoryboard(name: "table_layout", bundle: nil).instantiateViewController(withIdentifier: "TableLayout-Screen-VC") as! TableLayout_Screen
+        self.navigationController?.pushViewController(intent_VC, animated: true)
     }
 
-
+    @IBAction func ScrollView_Click(_ v: UIView?){
+        let intent_VC = UIStoryboard(name: "scroll_view", bundle: nil).instantiateViewController(withIdentifier: "ScrollView-Screen-VC") as! ScrollView_Screen
+        self.navigationController?.pushViewController(intent_VC, animated: true)
+    }
+    
+    
     override public func viewDidLoad(){
         super.viewDidLoad()
     }

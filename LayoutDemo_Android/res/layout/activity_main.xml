@@ -48,5 +48,11 @@
         android:text="Table Layout"
         android:onClick="TableLayout_Click"/>
 
+    <Button
+        android:id="@+id/btnScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroll View"
+        android:onClick="ScrollView_Click"/>
 
 </LinearLayout>
